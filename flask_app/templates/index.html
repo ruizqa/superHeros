@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container text-white">
+         <h1>Search for your Superhero!</h1>
+        </div>
+    </nav>
+
+    
+    <section class="py-5 my-5"></section>
+
+    <section class="my-5">
+        <div class="container">
+            <div class="col-6 offset-3 text-center">
+                <form class="searchForm">
+                    <input type="text" name="query" class="searchTerm">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="col results">
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5"></section>
+    <footer class=" col-12 p-1 bg-dark text-white text-center position-fixed bottom-0">
+        <div class="container">
+            <h5>SuperHero Page</h5>
+        </div>
+      </footer>
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='main.js')}}"></script>
+</body>
+</html>
